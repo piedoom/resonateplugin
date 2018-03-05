@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="dVXbKe" name="NMP_Plugin" displaySplashScreen="1" reportAppUsage="1"
+              splashScreenColour="Dark" projectType="audioplug" version="1.0.0"
+              bundleIdentifier="com.yourcompany.NMP_Plugin" includeBinaryInAppConfig="1"
+              cppLanguageStandard="11" companyCopyright="" buildVST="1" buildVST3="0"
+              buildAU="1" buildAUv3="0" buildRTAS="0" buildAAX="0" buildStandalone="1"
+              enableIAA="0" pluginName="NMP_Plugin" pluginDesc="NMP_Plugin"
+              pluginManufacturer="yourcompany" pluginManufacturerCode="Manu"
+              pluginCode="Dvxb" pluginChannelConfigs="" pluginIsSynth="1" pluginWantsMidiIn="1"
+              pluginProducesMidiOut="1" pluginIsMidiEffectPlugin="0" pluginEditorRequiresKeys="0"
+              pluginAUExportPrefix="NMP_PluginAU" pluginRTASCategory="" aaxIdentifier="com.yourcompany.NMP_Plugin"
+              pluginAAXCategory="AAX_ePlugInCategory_Dynamics" jucerVersion="5.2.0">
+  <MAINGROUP id="VKJt3e" name="NMP_Plugin">
+    <GROUP id="{B08A3D4B-EFFE-121B-3E96-31A6B4B9792A}" name="Source">
+      <GROUP id="{2E63F303-649D-E58D-7568-2E091C364FE4}" name="Maximillian">
+        <GROUP id="{64B2A141-5372-6800-DF62-82D161D43CF0}" name="libs">
+          <FILE id="kVKNwB" name="fft.cpp" compile="1" resource="0" file="Libraries/Maximillian/libs/fft.cpp"/>
+          <FILE id="pe2718" name="fft.h" compile="0" resource="0" file="Libraries/Maximillian/libs/fft.h"/>
+          <FILE id="D6xsQ5" name="maxiAtoms.cpp" compile="1" resource="0" file="Libraries/Maximillian/libs/maxiAtoms.cpp"/>
+          <FILE id="fIrAUp" name="maxiAtoms.h" compile="0" resource="0" file="Libraries/Maximillian/libs/maxiAtoms.h"/>
+          <FILE id="S2guVG" name="maxiBark.cpp" compile="1" resource="0" file="Libraries/Maximillian/libs/maxiBark.cpp"/>
+          <FILE id="T0SFZC" name="maxiBark.h" compile="0" resource="0" file="Libraries/Maximillian/libs/maxiBark.h"/>
+          <FILE id="ZO91xS" name="maxiFFT.cpp" compile="1" resource="0" file="Libraries/Maximillian/libs/maxiFFT.cpp"/>
+          <FILE id="kLcWIr" name="maxiFFT.h" compile="0" resource="0" file="Libraries/Maximillian/libs/maxiFFT.h"/>
+          <FILE id="pfIZzA" name="maxiGrains.cpp" compile="1" resource="0" file="Libraries/Maximillian/libs/maxiGrains.cpp"/>
+          <FILE id="xAb7zI" name="maxiGrains.h" compile="0" resource="0" file="Libraries/Maximillian/libs/maxiGrains.h"/>
+          <FILE id="RuOYlN" name="maxim.h" compile="0" resource="0" file="Libraries/Maximillian/libs/maxim.h"/>
+          <FILE id="tenruP" name="maxiMFCC.cpp" compile="1" resource="0" file="Libraries/Maximillian/libs/maxiMFCC.cpp"/>
+          <FILE id="nxWkdF" name="maxiMFCC.h" compile="0" resource="0" file="Libraries/Maximillian/libs/maxiMFCC.h"/>
+          <FILE id="mrIDMb" name="sineTable.h" compile="0" resource="0" file="Libraries/Maximillian/libs/sineTable.h"/>
+        </GROUP>
+        <FILE id="uPEiAu" name="main.cpp" compile="1" resource="0" file="Libraries/Maximillian/main.cpp"/>
+        <FILE id="HQbT7q" name="maximilian.cpp" compile="1" resource="0" file="Libraries/Maximillian/maximilian.cpp"/>
+        <FILE id="p64Am7" name="maximilian.h" compile="0" resource="0" file="Libraries/Maximillian/maximilian.h"/>
+        <FILE id="vA6vUk" name="stb_vorbis.c" compile="1" resource="0" file="Libraries/Maximillian/stb_vorbis.c"/>
+        <FILE id="eSg6Gy" name="stb_vorbis.h" compile="0" resource="0" file="Libraries/Maximillian/stb_vorbis.h"/>
+      </GROUP>
+      <FILE id="iCYY9O" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="gpjXRf" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="PeqC4u" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="jsnyqB" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="HIHKyf" name="SynthSound.h" compile="0" resource="0" file="Source/SynthSound.h"/>
+      <FILE id="SMKRc5" name="SynthVoice.h" compile="0" resource="0" file="Source/SynthVoice.h"/>
+      <FILE id="POWXLM" name="Oscillator.cpp" compile="1" resource="0" file="Source/Oscillator.cpp"/>
+      <FILE id="Vr5ms8" name="Oscillator.h" compile="0" resource="0" file="Source/Oscillator.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2017 targetFolder="Builds/VisualStudio2017" windowsTargetPlatformVersion="10.0.16299.0">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       debugInformationFormat="ProgramDatabase" enablePluginBinaryCopyStep="0"
+                       linkTimeOptimisation="0" isDebug="1" optimisation="1" targetName="NMP_Plugin"
+                       headerPath="C:\Users\ulija\Documents\NMP_Plugin\Libraries\Maximillian"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       debugInformationFormat="ProgramDatabase" enablePluginBinaryCopyStep="0"
+                       linkTimeOptimisation="1" isDebug="0" optimisation="3" targetName="NMP_Plugin"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../Downloads/juce-huckleberry-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../Downloads/juce-huckleberry-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../Downloads/juce-huckleberry-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../Downloads/juce-huckleberry-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../Downloads/juce-huckleberry-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../Downloads/juce-huckleberry-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../Downloads/juce-huckleberry-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../../Downloads/juce-huckleberry-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../Downloads/juce-huckleberry-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../Downloads/juce-huckleberry-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../Downloads/juce-huckleberry-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../Downloads/juce-huckleberry-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../Downloads/juce-huckleberry-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../Downloads/juce-huckleberry-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../Downloads/juce-huckleberry-windows/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2017>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_QUICKTIME="disabled"/>
+</JUCERPROJECT>
